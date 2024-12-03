@@ -1,0 +1,33 @@
+[7.494s] Invoking command in '/home/wakimkings/ros2_ws/src/my_py_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/wakimkings/ros2_ws/src/my_py_pkg/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wakimkings/ros2_ws/src/my_py_pkg/install/my_py_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/my_py_pkg build --build-base /home/wakimkings/ros2_ws/src/my_py_pkg/build/my_py_pkg/build install --record /home/wakimkings/ros2_ws/src/my_py_pkg/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[8.938s] running egg_info
+[8.942s] creating build/my_py_pkg/my_py_pkg.egg-info
+[9.131s] writing build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[9.131s] writing dependency_links to build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[9.132s] writing requirements to build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[9.132s] writing top-level names to build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[9.132s] writing manifest file 'build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[9.304s] reading manifest file 'build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[9.304s] adding license file 'LICENSE'
+[9.307s] writing manifest file 'build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[9.307s] running build
+[9.307s] running build_py
+[9.308s] creating /home/wakimkings/ros2_ws/src/my_py_pkg/build/my_py_pkg/build
+[9.310s] creating /home/wakimkings/ros2_ws/src/my_py_pkg/build/my_py_pkg/build/lib
+[9.310s] creating /home/wakimkings/ros2_ws/src/my_py_pkg/build/my_py_pkg/build/lib/my_py_pkg
+[9.310s] copying my_py_pkg/__init__.py -> /home/wakimkings/ros2_ws/src/my_py_pkg/build/my_py_pkg/build/lib/my_py_pkg
+[9.310s] running install
+[9.325s] running install_lib
+[9.404s] creating /home/wakimkings/ros2_ws/src/my_py_pkg/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[9.405s] copying /home/wakimkings/ros2_ws/src/my_py_pkg/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/wakimkings/ros2_ws/src/my_py_pkg/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg
+[9.405s] byte-compiling /home/wakimkings/ros2_ws/src/my_py_pkg/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/__init__.py to __init__.cpython-312.pyc
+[9.406s] running install_data
+[9.406s] creating /home/wakimkings/ros2_ws/src/my_py_pkg/install/my_py_pkg/share/ament_index
+[9.413s] creating /home/wakimkings/ros2_ws/src/my_py_pkg/install/my_py_pkg/share/ament_index/resource_index
+[9.414s] creating /home/wakimkings/ros2_ws/src/my_py_pkg/install/my_py_pkg/share/ament_index/resource_index/packages
+[9.414s] copying resource/my_py_pkg -> /home/wakimkings/ros2_ws/src/my_py_pkg/install/my_py_pkg/share/ament_index/resource_index/packages
+[9.414s] copying package.xml -> /home/wakimkings/ros2_ws/src/my_py_pkg/install/my_py_pkg/share/my_py_pkg
+[9.414s] running install_egg_info
+[9.545s] Copying build/my_py_pkg/my_py_pkg.egg-info to /home/wakimkings/ros2_ws/src/my_py_pkg/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg-0.0.0-py3.12.egg-info
+[9.563s] running install_scripts
+[10.321s] writing list of installed files to '/home/wakimkings/ros2_ws/src/my_py_pkg/build/my_py_pkg/install.log'
+[10.476s] Invoked command in '/home/wakimkings/ros2_ws/src/my_py_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/wakimkings/ros2_ws/src/my_py_pkg/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wakimkings/ros2_ws/src/my_py_pkg/install/my_py_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/my_py_pkg build --build-base /home/wakimkings/ros2_ws/src/my_py_pkg/build/my_py_pkg/build install --record /home/wakimkings/ros2_ws/src/my_py_pkg/build/my_py_pkg/install.log --single-version-externally-managed install_data

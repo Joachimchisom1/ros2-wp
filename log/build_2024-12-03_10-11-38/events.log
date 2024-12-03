@@ -1,0 +1,307 @@
+[0.000000] (-) TimerEvent: {}
+[0.004295] (cpp_pkg) JobQueued: {'identifier': 'cpp_pkg', 'dependencies': OrderedDict()}
+[0.004361] (my_py_pkg) JobQueued: {'identifier': 'my_py_pkg', 'dependencies': OrderedDict()}
+[0.004390] (cpp_pkg) JobStarted: {'identifier': 'cpp_pkg'}
+[0.100833] (my_py_pkg) JobStarted: {'identifier': 'my_py_pkg'}
+[0.105900] (-) TimerEvent: {}
+[0.215460] (cpp_pkg) JobProgress: {'identifier': 'cpp_pkg', 'progress': 'cmake'}
+[0.215724] (-) TimerEvent: {}
+[0.222020] (cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/wakimkings/ros2_ws/src/cpp_pkg', '-DCMAKE_INSTALL_PREFIX=/home/wakimkings/ros2_ws/install/cpp_pkg'], 'cwd': '/home/wakimkings/ros2_ws/build/cpp_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wakimkings', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/wakimkings', 'OLDPWD': '/home/wakimkings/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3713', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/wakimkings/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'wakimkings', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wakimkings', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/wakimkings:@/tmp/.ICE-unix/3674,unix/wakimkings:/tmp/.ICE-unix/3674', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8702d083_6043_482e_a7ac_dcae42894912', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.3BN8X2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wakimkings/ros2_ws/build/cpp_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.318164] (-) TimerEvent: {}
+[0.421536] (-) TimerEvent: {}
+[0.525435] (-) TimerEvent: {}
+[0.641612] (-) TimerEvent: {}
+[0.767036] (-) TimerEvent: {}
+[0.868486] (-) TimerEvent: {}
+[1.023866] (-) TimerEvent: {}
+[1.142907] (-) TimerEvent: {}
+[1.254509] (-) TimerEvent: {}
+[1.369049] (-) TimerEvent: {}
+[1.471466] (-) TimerEvent: {}
+[1.577206] (-) TimerEvent: {}
+[1.683658] (-) TimerEvent: {}
+[1.786215] (-) TimerEvent: {}
+[1.891770] (-) TimerEvent: {}
+[1.970352] (cpp_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[1.992277] (-) TimerEvent: {}
+[2.093690] (-) TimerEvent: {}
+[2.203406] (-) TimerEvent: {}
+[2.314987] (-) TimerEvent: {}
+[2.421059] (-) TimerEvent: {}
+[2.524341] (-) TimerEvent: {}
+[2.674496] (-) TimerEvent: {}
+[2.778512] (-) TimerEvent: {}
+[2.889518] (-) TimerEvent: {}
+[3.014982] (-) TimerEvent: {}
+[3.147024] (-) TimerEvent: {}
+[3.255448] (-) TimerEvent: {}
+[3.363734] (-) TimerEvent: {}
+[3.465186] (-) TimerEvent: {}
+[3.570427] (-) TimerEvent: {}
+[3.684178] (-) TimerEvent: {}
+[3.785598] (-) TimerEvent: {}
+[3.886488] (-) TimerEvent: {}
+[3.999508] (-) TimerEvent: {}
+[4.102292] (-) TimerEvent: {}
+[4.205584] (-) TimerEvent: {}
+[4.307276] (-) TimerEvent: {}
+[4.417694] (-) TimerEvent: {}
+[4.525542] (-) TimerEvent: {}
+[4.630693] (-) TimerEvent: {}
+[4.732395] (-) TimerEvent: {}
+[4.842683] (-) TimerEvent: {}
+[4.963468] (-) TimerEvent: {}
+[5.065742] (-) TimerEvent: {}
+[5.171549] (-) TimerEvent: {}
+[5.187303] (cpp_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[5.271839] (-) TimerEvent: {}
+[5.378600] (-) TimerEvent: {}
+[5.481939] (-) TimerEvent: {}
+[5.501281] (cpp_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.597796] (-) TimerEvent: {}
+[5.706982] (-) TimerEvent: {}
+[5.830846] (-) TimerEvent: {}
+[5.932457] (-) TimerEvent: {}
+[6.035209] (-) TimerEvent: {}
+[6.138702] (-) TimerEvent: {}
+[6.241122] (-) TimerEvent: {}
+[6.342754] (-) TimerEvent: {}
+[6.452071] (-) TimerEvent: {}
+[6.564478] (-) TimerEvent: {}
+[6.704025] (-) TimerEvent: {}
+[6.812905] (-) TimerEvent: {}
+[6.818275] (cpp_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.915505] (-) TimerEvent: {}
+[6.991485] (cpp_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.006576] (cpp_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.014997] (-) TimerEvent: {}
+[7.032639] (cpp_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.115468] (-) TimerEvent: {}
+[7.214315] (cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.215906] (-) TimerEvent: {}
+[7.321305] (-) TimerEvent: {}
+[7.422408] (-) TimerEvent: {}
+[7.540983] (-) TimerEvent: {}
+[7.659470] (-) TimerEvent: {}
+[7.797919] (-) TimerEvent: {}
+[7.936084] (-) TimerEvent: {}
+[8.053861] (-) TimerEvent: {}
+[8.163655] (-) TimerEvent: {}
+[8.276035] (-) TimerEvent: {}
+[8.388370] (-) TimerEvent: {}
+[8.490384] (-) TimerEvent: {}
+[8.593729] (-) TimerEvent: {}
+[8.698673] (-) TimerEvent: {}
+[8.849942] (-) TimerEvent: {}
+[8.953943] (-) TimerEvent: {}
+[9.058692] (-) TimerEvent: {}
+[9.171621] (-) TimerEvent: {}
+[9.282007] (-) TimerEvent: {}
+[9.390377] (-) TimerEvent: {}
+[9.500493] (-) TimerEvent: {}
+[9.601659] (-) TimerEvent: {}
+[9.703610] (-) TimerEvent: {}
+[9.815492] (-) TimerEvent: {}
+[9.926219] (-) TimerEvent: {}
+[10.047753] (-) TimerEvent: {}
+[10.156598] (-) TimerEvent: {}
+[10.271253] (-) TimerEvent: {}
+[10.390844] (-) TimerEvent: {}
+[10.547917] (-) TimerEvent: {}
+[10.698275] (-) TimerEvent: {}
+[10.851761] (-) TimerEvent: {}
+[10.960424] (-) TimerEvent: {}
+[11.071486] (-) TimerEvent: {}
+[11.187814] (-) TimerEvent: {}
+[11.292160] (-) TimerEvent: {}
+[11.432731] (-) TimerEvent: {}
+[11.550638] (-) TimerEvent: {}
+[11.682419] (-) TimerEvent: {}
+[11.806046] (-) TimerEvent: {}
+[11.913482] (-) TimerEvent: {}
+[12.019470] (-) TimerEvent: {}
+[12.124254] (-) TimerEvent: {}
+[12.237429] (-) TimerEvent: {}
+[12.349805] (-) TimerEvent: {}
+[12.451461] (-) TimerEvent: {}
+[12.601495] (-) TimerEvent: {}
+[12.713545] (-) TimerEvent: {}
+[12.815619] (-) TimerEvent: {}
+[12.941355] (-) TimerEvent: {}
+[13.050706] (-) TimerEvent: {}
+[13.103090] (cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[13.156652] (-) TimerEvent: {}
+[13.260590] (-) TimerEvent: {}
+[13.314534] (cpp_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[13.329761] (cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[13.330132] (cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[13.361687] (-) TimerEvent: {}
+[13.467971] (-) TimerEvent: {}
+[13.598713] (cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[13.600103] (-) TimerEvent: {}
+[13.703011] (-) TimerEvent: {}
+[13.835662] (-) TimerEvent: {}
+[13.946747] (-) TimerEvent: {}
+[14.053908] (-) TimerEvent: {}
+[14.158388] (-) TimerEvent: {}
+[14.267623] (-) TimerEvent: {}
+[14.373425] (-) TimerEvent: {}
+[14.490899] (-) TimerEvent: {}
+[14.611904] (-) TimerEvent: {}
+[14.715254] (-) TimerEvent: {}
+[14.826809] (-) TimerEvent: {}
+[14.954846] (-) TimerEvent: {}
+[15.069736] (-) TimerEvent: {}
+[15.172984] (-) TimerEvent: {}
+[15.285674] (-) TimerEvent: {}
+[15.396669] (-) TimerEvent: {}
+[15.552739] (-) TimerEvent: {}
+[15.657032] (-) TimerEvent: {}
+[15.762759] (-) TimerEvent: {}
+[15.870534] (-) TimerEvent: {}
+[16.023716] (-) TimerEvent: {}
+[16.125319] (-) TimerEvent: {}
+[16.231705] (-) TimerEvent: {}
+[16.348236] (-) TimerEvent: {}
+[16.460482] (-) TimerEvent: {}
+[16.549736] (cpp_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[16.550898] (-) TimerEvent: {}
+[16.665449] (-) TimerEvent: {}
+[16.772043] (-) TimerEvent: {}
+[16.878571] (-) TimerEvent: {}
+[16.980526] (-) TimerEvent: {}
+[17.087547] (-) TimerEvent: {}
+[17.188198] (-) TimerEvent: {}
+[17.296917] (-) TimerEvent: {}
+[17.427510] (-) TimerEvent: {}
+[17.583201] (-) TimerEvent: {}
+[17.591378] (my_py_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_py_pkg', 'build', '--build-base', '/home/wakimkings/ros2_ws/build/my_py_pkg/build', 'install', '--record', '/home/wakimkings/ros2_ws/build/my_py_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/wakimkings/ros2_ws/src/my_py_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wakimkings', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/wakimkings', 'OLDPWD': '/home/wakimkings/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3713', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/wakimkings/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'wakimkings', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wakimkings', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/wakimkings:@/tmp/.ICE-unix/3674,unix/wakimkings:/tmp/.ICE-unix/3674', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8702d083_6043_482e_a7ac_dcae42894912', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.3BN8X2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wakimkings/ros2_ws/build/my_py_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/wakimkings/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wakimkings/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[17.685867] (-) TimerEvent: {}
+[17.794371] (-) TimerEvent: {}
+[17.902392] (-) TimerEvent: {}
+[18.012390] (-) TimerEvent: {}
+[18.147348] (-) TimerEvent: {}
+[18.261672] (-) TimerEvent: {}
+[18.362554] (-) TimerEvent: {}
+[18.464337] (-) TimerEvent: {}
+[18.572737] (cpp_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[18.574291] (-) TimerEvent: {}
+[18.676684] (-) TimerEvent: {}
+[18.783254] (-) TimerEvent: {}
+[18.884923] (-) TimerEvent: {}
+[18.991639] (-) TimerEvent: {}
+[19.110291] (-) TimerEvent: {}
+[19.216200] (-) TimerEvent: {}
+[19.324512] (-) TimerEvent: {}
+[19.433800] (-) TimerEvent: {}
+[19.537050] (-) TimerEvent: {}
+[19.638690] (-) TimerEvent: {}
+[19.741968] (-) TimerEvent: {}
+[19.846918] (-) TimerEvent: {}
+[19.852841] (cpp_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[19.874659] (cpp_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[19.960709] (-) TimerEvent: {}
+[19.965953] (cpp_pkg) StdoutLine: {'line': b'-- Configuring done (19.2s)\n'}
+[20.003704] (cpp_pkg) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[20.013029] (cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/wakimkings/ros2_ws/build/cpp_pkg\n'}
+[20.070142] (-) TimerEvent: {}
+[20.155054] (cpp_pkg) CommandEnded: {'returncode': 0}
+[20.183979] (-) TimerEvent: {}
+[20.189723] (cpp_pkg) JobProgress: {'identifier': 'cpp_pkg', 'progress': 'build'}
+[20.189874] (cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wakimkings/ros2_ws/build/cpp_pkg', '--', '-j4', '-l4'], 'cwd': '/home/wakimkings/ros2_ws/build/cpp_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wakimkings', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/wakimkings', 'OLDPWD': '/home/wakimkings/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3713', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/wakimkings/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'wakimkings', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wakimkings', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/wakimkings:@/tmp/.ICE-unix/3674,unix/wakimkings:/tmp/.ICE-unix/3674', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8702d083_6043_482e_a7ac_dcae42894912', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.3BN8X2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wakimkings/ros2_ws/build/cpp_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[20.292367] (-) TimerEvent: {}
+[20.430648] (-) TimerEvent: {}
+[20.534375] (-) TimerEvent: {}
+[20.640977] (-) TimerEvent: {}
+[20.748997] (-) TimerEvent: {}
+[20.850000] (-) TimerEvent: {}
+[20.967913] (-) TimerEvent: {}
+[21.026108] (cpp_pkg) CommandEnded: {'returncode': 0}
+[21.070265] (-) TimerEvent: {}
+[21.183774] (-) TimerEvent: {}
+[21.329602] (-) TimerEvent: {}
+[21.381305] (my_py_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[21.393412] (my_py_pkg) StdoutLine: {'line': b'creating ../../build/my_py_pkg/my_py_pkg.egg-info\n'}
+[21.430667] (-) TimerEvent: {}
+[21.546421] (cpp_pkg) JobProgress: {'identifier': 'cpp_pkg', 'progress': 'install'}
+[21.546520] (-) TimerEvent: {}
+[21.654926] (cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wakimkings/ros2_ws/build/cpp_pkg'], 'cwd': '/home/wakimkings/ros2_ws/build/cpp_pkg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'wakimkings', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/wakimkings', 'OLDPWD': '/home/wakimkings/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3713', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/wakimkings/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'wakimkings', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'wakimkings', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/wakimkings:@/tmp/.ICE-unix/3674,unix/wakimkings:/tmp/.ICE-unix/3674', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8702d083_6043_482e_a7ac_dcae42894912', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.3BN8X2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/wakimkings/ros2_ws/build/cpp_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[21.689359] (-) TimerEvent: {}
+[21.751492] (my_py_pkg) StdoutLine: {'line': b'writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO\n'}
+[21.754406] (my_py_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt\n'}
+[21.756637] (my_py_pkg) StdoutLine: {'line': b'writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt\n'}
+[21.760117] (my_py_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt\n'}
+[21.762118] (my_py_pkg) StdoutLine: {'line': b"writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[21.789599] (-) TimerEvent: {}
+[21.793635] (cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.794652] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/ament_index/resource_index/package_run_dependencies/cpp_pkg\n'}
+[21.795144] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/ament_index/resource_index/parent_prefix_path/cpp_pkg\n'}
+[21.795647] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/environment/ament_prefix_path.sh\n'}
+[21.798619] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[21.804786] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/environment/path.sh\n'}
+[21.805729] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/environment/path.dsv\n'}
+[21.810553] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/local_setup.bash\n'}
+[21.811552] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/local_setup.sh\n'}
+[21.812516] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/local_setup.zsh\n'}
+[21.812957] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/local_setup.dsv\n'}
+[21.813191] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.dsv\n'}
+[21.814161] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/ament_index/resource_index/packages/cpp_pkg\n'}
+[21.814720] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/cmake/cpp_pkgConfig.cmake\n'}
+[21.815002] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/cmake/cpp_pkgConfig-version.cmake\n'}
+[21.815265] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.xml\n'}
+[21.831517] (cpp_pkg) CommandEnded: {'returncode': 0}
+[21.894286] (-) TimerEvent: {}
+[22.029658] (-) TimerEvent: {}
+[22.168452] (-) TimerEvent: {}
+[22.274830] (-) TimerEvent: {}
+[22.321185] (my_py_pkg) StdoutLine: {'line': b"reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[22.322153] (my_py_pkg) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[22.334879] (my_py_pkg) StdoutLine: {'line': b"writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[22.340883] (my_py_pkg) StdoutLine: {'line': b'running build\n'}
+[22.342517] (my_py_pkg) StdoutLine: {'line': b'running build_py\n'}
+[22.343320] (my_py_pkg) StdoutLine: {'line': b'creating /home/wakimkings/ros2_ws/build/my_py_pkg/build\n'}
+[22.343540] (my_py_pkg) StdoutLine: {'line': b'creating /home/wakimkings/ros2_ws/build/my_py_pkg/build/lib\n'}
+[22.345181] (my_py_pkg) StdoutLine: {'line': b'creating /home/wakimkings/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg\n'}
+[22.351356] (my_py_pkg) StdoutLine: {'line': b'copying my_py_pkg/__init__.py -> /home/wakimkings/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg\n'}
+[22.357239] (my_py_pkg) StdoutLine: {'line': b'running install\n'}
+[22.377687] (-) TimerEvent: {}
+[22.381770] (my_py_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[22.480990] (-) TimerEvent: {}
+[22.627426] (-) TimerEvent: {}
+[22.633053] (cpp_pkg) JobEnded: {'identifier': 'cpp_pkg', 'rc': 0}
+[22.728677] (my_py_pkg) StdoutLine: {'line': b'creating /home/wakimkings/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg\n'}
+[22.728955] (-) TimerEvent: {}
+[22.729809] (my_py_pkg) StdoutLine: {'line': b'copying /home/wakimkings/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/wakimkings/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg\n'}
+[22.730916] (my_py_pkg) StdoutLine: {'line': b'byte-compiling /home/wakimkings/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg/__init__.py to __init__.cpython-312.pyc\n'}
+[22.731624] (my_py_pkg) StdoutLine: {'line': b'running install_data\n'}
+[22.737856] (my_py_pkg) StdoutLine: {'line': b'creating /home/wakimkings/ros2_ws/install/my_py_pkg/share/ament_index\n'}
+[22.738720] (my_py_pkg) StdoutLine: {'line': b'creating /home/wakimkings/ros2_ws/install/my_py_pkg/share/ament_index/resource_index\n'}
+[22.739538] (my_py_pkg) StdoutLine: {'line': b'creating /home/wakimkings/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages\n'}
+[22.739804] (my_py_pkg) StdoutLine: {'line': b'copying resource/my_py_pkg -> /home/wakimkings/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages\n'}
+[22.739932] (my_py_pkg) StdoutLine: {'line': b'copying package.xml -> /home/wakimkings/ros2_ws/install/my_py_pkg/share/my_py_pkg\n'}
+[22.740169] (my_py_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[22.829924] (-) TimerEvent: {}
+[22.952129] (-) TimerEvent: {}
+[22.975617] (my_py_pkg) StdoutLine: {'line': b'Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/wakimkings/ros2_ws/install/my_py_pkg/lib/python3.12/site-packages/my_py_pkg-0.0.0-py3.12.egg-info\n'}
+[23.001855] (my_py_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[23.055933] (-) TimerEvent: {}
+[23.156564] (-) TimerEvent: {}
+[23.258371] (-) TimerEvent: {}
+[23.382385] (-) TimerEvent: {}
+[23.500630] (-) TimerEvent: {}
+[23.602451] (-) TimerEvent: {}
+[23.703884] (-) TimerEvent: {}
+[23.808486] (-) TimerEvent: {}
+[23.922479] (-) TimerEvent: {}
+[24.027639] (-) TimerEvent: {}
+[24.134403] (-) TimerEvent: {}
+[24.256540] (-) TimerEvent: {}
+[24.363775] (-) TimerEvent: {}
+[24.399757] (my_py_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/wakimkings/ros2_ws/build/my_py_pkg/install.log'\n"}
+[24.465913] (-) TimerEvent: {}
+[24.580543] (-) TimerEvent: {}
+[24.684644] (my_py_pkg) CommandEnded: {'returncode': 0}
+[24.685879] (-) TimerEvent: {}
+[24.780824] (my_py_pkg) JobEnded: {'identifier': 'my_py_pkg', 'rc': 0}
+[24.793268] (-) TimerEvent: {}
+[24.793508] (-) EventReactorShutdown: {}

@@ -1,0 +1,32 @@
+[0.164s] Invoking command in '/home/wakimkings/ros2_ws/build/examples_rclcpp_async_client': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/wakimkings/ros2_ws/src/examples/rclcpp/services/async_client -DCMAKE_INSTALL_PREFIX=/home/wakimkings/ros2_ws/install/examples_rclcpp_async_client
+[2.698s] -- The C compiler identification is GNU 13.2.0
+[6.646s] -- The CXX compiler identification is GNU 13.2.0
+[7.139s] -- Detecting C compiler ABI info
+[8.652s] -- Detecting C compiler ABI info - done
+[8.809s] -- Check for working C compiler: /usr/bin/cc - skipped
+[8.818s] -- Detecting C compile features
+[8.870s] -- Detecting C compile features - done
+[9.021s] -- Detecting CXX compiler ABI info
+[10.442s] -- Detecting CXX compiler ABI info - done
+[10.522s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[10.543s] -- Detecting CXX compile features
+[10.544s] -- Detecting CXX compile features - done
+[10.622s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[10.623s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[10.624s]   has asked CMake to find a package configuration file provided by
+[10.624s]   "ament_cmake", but CMake did not find one.
+[10.624s] 
+[10.624s]   Could not find a package configuration file provided by "ament_cmake" with
+[10.625s]   any of the following names:
+[10.630s] 
+[10.631s]     ament_cmakeConfig.cmake
+[10.631s]     ament_cmake-config.cmake
+[10.631s] 
+[10.631s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[10.632s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[10.632s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[10.632s] -- Configuring incomplete, errors occurred!
+[10.633s]   has been installed.
+[10.633s] 
+[10.633s] [0m
+[10.664s] Invoked command in '/home/wakimkings/ros2_ws/build/examples_rclcpp_async_client' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/wakimkings/ros2_ws/src/examples/rclcpp/services/async_client -DCMAKE_INSTALL_PREFIX=/home/wakimkings/ros2_ws/install/examples_rclcpp_async_client

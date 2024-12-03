@@ -1,0 +1,42 @@
+[0.220s] Invoking command in '/home/wakimkings/ros2_ws/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/wakimkings/ros2_ws/src/cpp_pkg -DCMAKE_INSTALL_PREFIX=/home/wakimkings/ros2_ws/install/cpp_pkg
+[1.968s] -- The C compiler identification is GNU 13.2.0
+[5.183s] -- The CXX compiler identification is GNU 13.2.0
+[5.497s] -- Detecting C compiler ABI info
+[6.815s] -- Detecting C compiler ABI info - done
+[6.988s] -- Check for working C compiler: /usr/bin/cc - skipped
+[7.002s] -- Detecting C compile features
+[7.029s] -- Detecting C compile features - done
+[7.210s] -- Detecting CXX compiler ABI info
+[13.101s] -- Detecting CXX compiler ABI info - done
+[13.325s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[13.326s] -- Detecting CXX compile features
+[13.326s] -- Detecting CXX compile features - done
+[13.596s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[16.546s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[18.569s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[19.849s] -- Added test 'lint_cmake' to check CMake code style
+[19.872s] -- Added test 'xmllint' to check XML markup files
+[19.962s] -- Configuring done (19.2s)
+[20.000s] -- Generating done (0.0s)
+[20.009s] -- Build files have been written to: /home/wakimkings/ros2_ws/build/cpp_pkg
+[20.153s] Invoked command in '/home/wakimkings/ros2_ws/build/cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/wakimkings/ros2_ws/src/cpp_pkg -DCMAKE_INSTALL_PREFIX=/home/wakimkings/ros2_ws/install/cpp_pkg
+[20.186s] Invoking command in '/home/wakimkings/ros2_ws/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/wakimkings/ros2_ws/build/cpp_pkg -- -j4 -l4
+[21.059s] Invoked command in '/home/wakimkings/ros2_ws/build/cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/wakimkings/ros2_ws/build/cpp_pkg -- -j4 -l4
+[21.684s] Invoking command in '/home/wakimkings/ros2_ws/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/wakimkings/ros2_ws/build/cpp_pkg
+[21.790s] -- Install configuration: ""
+[21.790s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/ament_index/resource_index/package_run_dependencies/cpp_pkg
+[21.791s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/ament_index/resource_index/parent_prefix_path/cpp_pkg
+[21.794s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/environment/ament_prefix_path.sh
+[21.800s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/environment/ament_prefix_path.dsv
+[21.801s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/environment/path.sh
+[21.802s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/environment/path.dsv
+[21.806s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/local_setup.bash
+[21.807s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/local_setup.sh
+[21.808s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/local_setup.zsh
+[21.809s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/local_setup.dsv
+[21.809s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.dsv
+[21.810s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/ament_index/resource_index/packages/cpp_pkg
+[21.810s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/cmake/cpp_pkgConfig.cmake
+[21.811s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/cmake/cpp_pkgConfig-version.cmake
+[21.811s] -- Installing: /home/wakimkings/ros2_ws/install/cpp_pkg/share/cpp_pkg/package.xml
+[21.830s] Invoked command in '/home/wakimkings/ros2_ws/build/cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/wakimkings/ros2_ws/build/cpp_pkg
